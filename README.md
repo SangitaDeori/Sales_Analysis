@@ -32,6 +32,22 @@ The Databricks notebooks cover:
 3. **Time-Series Analysis:** Mapping revenue growth month-over-month.
 4. **Customer Behavior:** Analyzing average order value (AOV) across different demographics.
 
+## Business Insights
+
+- Laptop generated the highest revenue.
+- Electronics category outperformed Accessories.
+- North region contributed the highest sales revenue.
+- Revenue trends can be analyzed by Order Date.
+
+## Architecture
+
+1. Sales data is stored in a GitHub repository as a CSV file.
+2. Databricks downloads the file from GitHub into a Unity Catalog Volume.
+3. PySpark reads the CSV file and infers the schema.
+4. Data is loaded into a Delta Table within Unity Catalog.
+5. SQL queries are executed to analyze revenue and sales performance.
+6. Databricks Dashboards visualize business insights.
+
 ## 🔧 How to Run the Project
 1. Clone this repository to your local machine or download the files.
 2. Log into your **Databricks** account.
