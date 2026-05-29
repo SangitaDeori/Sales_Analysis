@@ -48,53 +48,34 @@ The Databricks notebooks cover:
 5. SQL queries are executed to analyze revenue and sales performance.
 6. Databricks Dashboards visualize business insights.
 
-## Project Architecture Preview
-+--------------------+
-| GitHub Repository  |
-| sales.csv          |
-+---------+----------+
-          |
-          |
-          ▼
-+--------------------+
-| Databricks         |
-| Data Ingestion     |
-| Python + Requests  |
-+---------+----------+
-          |
-          ▼
-+--------------------+
-| Unity Catalog      |
-| Volume Storage     |
-| /datasets/sales    |
-+---------+----------+
-          |
-          ▼
-+--------------------+
-| PySpark            |
-| DataFrame          |
-| Schema Inference   |
-+---------+----------+
-          |
-          ▼
-+--------------------+
-| Delta Table        |
-| dev.sales_db.sales |
-+---------+----------+
-          |
-          ▼
-+--------------------+
-| SQL Analytics      |
-| Revenue Analysis   |
-| Product Analysis   |
-+---------+----------+
-          |
-          ▼
-+--------------------+
-| Databricks         |
-| Dashboard          |
-| Visualizations     |
-+--------------------+
+## 🏗️ Project Architecture
+
+```text
+GitHub Repository (sales.csv)
+            │
+            ▼
+Databricks Data Ingestion
+(Python + Requests)
+            │
+            ▼
+Unity Catalog Volume
+/dev/sales_db/datasets/sales/
+            │
+            ▼
+PySpark DataFrame
+(Schema Inference)
+            │
+            ▼
+Delta Table
+dev.sales_db.sales
+            │
+            ▼
+SQL Analytics
+(Revenue Analysis)
+            │
+            ▼
+Databricks Dashboard
+(Visualizations)
 
 ## 🔧 How to Run the Project
 1. Clone this repository to your local machine or download the files.
