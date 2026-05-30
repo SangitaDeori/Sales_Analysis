@@ -83,3 +83,18 @@ Databricks Dashboard
 3. Upload the `[sales].csv` file to **DBFS** via the Data Ingestion tab.
 4. Import the provided notebook file from the `notebooks/` directory into your Databricks workspace.
 5. Attach the notebook to an active Spark cluster and click **Run All**.
+
+## 📊 Sales Summary Dashboard – Power BI
+
+Built an interactive Sales Dashboard in Power BI to analyze revenue, orders, units sold, and average order value. The dashboard includes KPI cards, regional revenue analysis, product performance tracking, and a detailed sales summary table to provide business insights and support data-driven decision-making.
+
+Skills Used
+Power BI
+Data Visualization
+Dashboard Design
+DAX Measures
+Business Intelligence Reporting
+Key Insights
+Identified top-performing products and regions.
+Monitored key sales KPIs.
+Presented sales data through interactive visualizations.
